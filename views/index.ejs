@@ -26,7 +26,7 @@
 	 var searchTxt = $("input[name='ingredient']").val();
 	 console.log(searchTxt);
 	 //if(searchTxt=="") searchTxt = "no";
-	 $.post("/search/ingredient", {searchVal: searchTxt}, function(output) {
+	 $.post("/search/ingredient", {val: searchTxt}, function(output) {
 		 $("#output").html(output);
 	 });
  }
