@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <%- include('header'); -%>
+ <script type="text/javascript">
+  $(document).ready(function() {
+      // some code
+  });
+ </script>
+
+ <ul class="list-group">
+  <%for(let i = 0; i < recipes.length; i++){%>
+     <li class="list-group-item">
+        <div class="card" style="width: 50%;">
+          <div class="card-body">
+            <h5 class="card-title"><%=recipes[i].title%></h5>
+            <img src="<%=recipes[i].image%>" class="card-img-top" alt="Recipe image" style="width: 50%;"
+            <h6 class="card-subtitle mb-2 text-muted"></h6>
+            <p class="card-text"><%=recipes[i].description%></p>
+          </div>
+        </div>
+     </li>
+  <%}%>
+ </ul>
+</body>
+</html>
+
